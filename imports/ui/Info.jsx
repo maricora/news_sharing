@@ -4,14 +4,14 @@ import React, { Component, PropTypes } from 'react';
 export default class Info extends Component {
   render() {
     return (
-      <div className="col s12">
-	    <div className="card-panel teal lighten-5">
-	      <div className="card-block">
-	        <h4 className="card-title">{this.props.info.title}</h4>
-	        <p className="card-text">{this.props.info.text}</p>
-	       </div>
-	    </div>
-	  </div>
+      <div className="col-md-3 col-lg-4">
+      <div className="card card-outline-primary">
+        <div className="card-block">
+          <h4 className="card-title">{this.props.info.title}</h4>
+          <p className="card-text">{this.props.info.text}</p>
+         </div>
+      </div>
+    </div>
     );
   }
 }

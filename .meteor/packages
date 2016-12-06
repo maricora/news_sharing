@@ -26,4 +26,4 @@ react-meteor-data
 fourseven:scss
 accounts-ui
 accounts-password
-materialize:materialize@=0.97.7
+bootstrap

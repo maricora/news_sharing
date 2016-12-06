@@ -55,11 +55,11 @@ class App extends Component {
         You must be logged in to post.<br/>
         <AccountsUIWrapper /></div>
         <header>
-          <h1 className="teal-text ">Havana Community notice board</h1>
+          <h1>Havana Community notice board</h1>
         </header>
 
         { this.props.currentUser ?
-        <div className="card-panel teal lighten-5">
+        <div className="post-form card">
         <p>If you want to add a new piece of information for the community, please fill in 
         the form below. Press submit after filling in the title and the content.</p>
         <form className="new-info" onSubmit={this.handleSubmit.bind(this)} >
@@ -73,7 +73,7 @@ class App extends Component {
                   />
                 </div>
                 <div className="form-group" ref="divTextInput">
-                  <input
+                  <textarea
                     type="text"
                     id="textInput"
                     ref="textInput"
