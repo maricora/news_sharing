@@ -1,0 +1,29 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Havana Community news and announcements</h1>
+    </header>
+
+    <div class="row">
+      {{#each articles}}
+        {{> article}}
+      {{/each}}
+    </div>
+  </div>
+
+
+</body>
+ 
+<template name="article">
+  <div class="col-md-3 col-lg-4">
+    <div class="card">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-block">
+        <h4 class="card-title">{{title}}</h4>
+        <p class="card-text">{{text}}</p>
+        <a href="#" class="btn btn-primary">Read full article</a>
+      </div>
+    </div>
+  </div>
+
+</template>
